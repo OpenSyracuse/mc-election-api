@@ -1,0 +1,29 @@
+{
+  "name": "mc-election-api",
+  "version": "0.0.1",
+  "description": "A simple API for polling locations in Monroe County",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OpenSyracuse/mc-election-api"
+  },
+  "keywords": [
+    "polling",
+    "elections",
+    "voting"
+  ],
+  "author": "Mark Headd <mheadd@gmail.com> (http://civic.io/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OpenSyracuse/mc-election-api/issues"
+  },
+  "homepage": "https://github.com/OpenSyracuse/mc-election-api",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "express": "^4.13.4",
+    "request": "^2.70.0"
+  }
+}
