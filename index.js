@@ -27,7 +27,7 @@ app.get('/', function(req, res) {
 		'v[dobd]': 'DD',
 		'v[doby]': 'YYYY',
 		'v[no]': house_num,
-		'v[sname]': street_name,
+		'v[sname]': street_name.toUpperCase(),
 		'v[zip]': zip,
 		submit: 'Get Voter Info'
 	}
