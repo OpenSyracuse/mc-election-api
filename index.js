@@ -40,10 +40,10 @@ app.get('/', function(req, res) {
 				var link = $('#maplinks a').attr('href');
 				var address = decodeURIComponent(link.substring(link.indexOf('=')+1, link.length)).replace(/\+/g, ' ');
 				if(req.query.callback) {
-					res.json({fullAddress: address });
+					res.jsonp({fullAddress: address });
 				}
 				else {
-					res.jsonp({fullAddress: address });
+					res.json({fullAddress: address });
 				}
 			}
 			catch(e) {
