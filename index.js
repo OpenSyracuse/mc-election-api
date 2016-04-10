@@ -27,7 +27,7 @@ app.get('/', function(req, res) {
 		'v[dobd]': 'DD',
 		'v[doby]': 'YYYY',
 		'v[no]': house_num,
-		'v[sname]': street_name.toUpperCase(),
+		'v[sname]': makeUpperCase(street_name),
 		'v[zip]': zip,
 		submit: 'Get Voter Info'
 	}
@@ -58,3 +58,9 @@ app.get('/', function(req, res) {
 
 });
 
+function makeUpperCase(street_name) {
+	if(street_name) {
+		return street_name.toUpperCase();
+	}
+	return street_name;
+}
